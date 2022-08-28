@@ -1,0 +1,19 @@
+.nav--divs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav--list--div {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+.nav__items {
+  list-style: none;
+}
+
+.nav__links {
+  text-decoration: none;
+  @include highlightWords;
+}
