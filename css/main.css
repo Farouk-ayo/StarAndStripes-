@@ -18,43 +18,59 @@ body {
   display: flex;
   flex-direction: row;
   gap: 4rem;
-  align-items: end;
+  align-items: center;
 }
 
 .btn {
   font-size: 2rem;
   color: #444;
   font-size: 1.7rem;
-  padding: 1rem 1rem;
+  padding: 1rem 2rem;
   border-radius: 10rem;
-  background-color: red;
+  background-color: #ff9300;
+  color: white;
+  border: none;
 }
 
 .reds {
-  color: red;
+  color: #ff9300;
 }
 
 .yellows {
-  color: #ffe600;
+  color: #ff304f;
   border-bottom: 1rem;
-  border-bottom-color: red;
+  border-bottom-color: #ff9300;
   border-bottom-left-radius: 3rem;
   border-bottom-right-radius: 3rem;
   border-bottom-style: solid;
 }
 
 .icon {
-  width: 3rem;
-  height: 3rem;
+  width: 5rem;
+  height: 5rem;
+}
+
+.watch--story {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.story {
+  font-size: 2rem;
 }
 
 .header {
-  background: url(../../images/food10.jpg);
+  background: linear-gradient(#fff48f, #fffdb7);
   padding: 3rem 3rem;
   background-size: cover;
+  overflow: hidden;
 }
 
 .header--content {
+  position: relative;
+  width: 60%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -65,7 +81,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  width: 80%;
+  width: 90%;
 }
 
 .header--text h1 {
@@ -76,23 +92,45 @@ body {
 .header--text p {
   font-size: 2rem;
   color: #444;
-  width: 70%;
+  width: 80%;
 }
 
 .food--input {
   border-radius: 10rem;
   border: none;
   outline: none;
-  width: 40%;
+  width: 60%;
   height: 4rem;
   font-size: 1.7rem;
   padding: 1rem 2rem;
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+}
+
+.gallery {
+  position: relative;
+}
+
+.gallery .image {
+  position: absolute;
+  width: 70rem;
+  height: 50rem;
+  rotate: 30deg;
+  border-radius: 10rem;
+  z-index: 1;
+  top: -18rem;
+  left: 8em;
 }
 
 .nav--divs {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
+  z-index: 2;
 }
 
 .nav--list--div {
